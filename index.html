@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Grocery Hawk</title>
+    <link rel="stylesheet" href="RemixIcon_Fonts_v4.1.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media_queries.css">
+  </head>
+
+  <body>
+
+    <!---------------------------------- TOP BAR start -------------------------------------->
+    <div class="topBar">
+      <div class="topBar__container">
+        <p class="promoText">Limited time promotion - Get 1 month FREE with a 3 month subscription</p>
+        <p>Promotion ends in:  
+          <span class="timer">29</span> days
+          <span class="timer">08</span> hours
+          <span class="timer">36</span> minutes
+          <!-- <span class="timer">19</span>s -->
+        </p>
+      </div>
+    </div>
+    <!---------------------------------- TOP BAR end -------------------------------------->
+
+    <div class="container">
+
+      <!---------------------------------- TOP MENU start -------------------------------------->
+
+      <div class="topMenu">
+        <!-- <h1 class="temporary">Top Menu</h1> -->
+        <div class="topMenu__left">
+          <ul>
+            <li>About Us</li>
+            <li>My Account</li>
+            <li>Whishlist</li>
+          </ul>
+        </div>
+        <div class="topMenu__middle">
+          <p class="promoText">We deliver to you every day from 7:00 to 23:00</p>
+        </div>
+        <div class="topMenu__right">
+          <ul>
+            <li>English <i class="ri-arrow-down-s-line"></i></li>
+            <li>USD <i class="ri-arrow-down-s-line"></i></li>
+            <li>Order Tracking</li>
+          </ul>
+        </div>
+      </div>
+      <!---------------------------------- TOP MENU end -------------------------------------->
+
+      <!---------------------------------- MAIN BAR start -------------------------------------->
+
+      <div class="mainBar">
+        <div class="mainBar__left">
+          <img src="assets/Whole_Foods.png" alt="" class="logo">
+          <div class="location">
+            <div class="location__icon">
+              <i class="ri-map-pin-line" style="font-size: 28px;"></i>
+            </div>
+            <div class="location__text">
+              <p>Search Location</p>
+              <p class="bold-text">Montreal, QC</p>
+            </div>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search for products, categories or brands...">
+        </div>
+        <div class="mainBar__right">
+          <div class="user__icon">
+            <i class="ri-user-line" style="font-size: 28px;"></i>
+          </div>
+          <div class="sign__in">
+            <p>Sign In</p>
+            <p class="bold-text">Account</p>
+          </div>
+          <div class="wishlist">
+            <i class="ri-heart-3-line" style="font-size: 28px;"></i>
+          </div>
+          <div class="location__icon">
+            <i class="ri-shopping-cart-line" style="font-size: 28px;"></i>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- MAIN BAR end -------------------------------------->
+
+      <!---------------------------------- MAIN SECTION start -------------------------------->
+
+      <div class="mainSection">
+
+        <div class="mainSection__left">
+          <div class="categories">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-function-line"></i>All Categories
+                  </div>
+                  <i class="ri-arrow-down-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-function-line"></i>Fruits & Vegetables
+                  </div>
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-knife-line"></i>Meats & Seafood
+                  </div>
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="bi bi-egg"></i>Breakfast & Dairy
+                  </div>
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-bread-line"></i>Breads & Bakery
+                  </div>
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-drinks-2-line"></i>Beverages
+                  </div>
+                  <i class="ri-arrow-right-s-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-function-line"></i>Frozen Foods
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-cake-3-line"></i>Biscuits & Snacks
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-function-line"></i>Grocery & Staples
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-home-2-line"></i>Houshold Needs
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-heart-pulse-line"></i>Healthcare
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="category__left">
+                    <i class="ri-function-line"></i>Baby & Pregnancy
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mainSection__right">
+          <div class="mainMenu">
+            <div class="mainMenu__left">
+              <ul>
+                <li><a href="#">Home <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#">Shop <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#">Fruits & Vegetables</a></li>
+                <li><a href="#">Beverages</a></li>
+                <li><a href="#">Blog</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+              </ul>
+            </div>
+            <div class="mainMenu__right">
+              <ul>
+                <li><a href="#">Trending Products <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#">Almost Finished <i class="ri-arrow-down-s-line"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-image">
+            <div class="main-image__text">
+              <h1>Compare prices of grocery items in stores near you</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa velit unde, repellat tempore ratione numquam?</p>
+              <div class="cta-box">
+                <div class="cta-btn__box">
+                  <button href="#">Join&nbsp;Now</button>
+                </div>
+                <div class="cta-text">
+                  <p>Enjoy additional advantages when you become a member. Start for free now...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!---------------------------------- MAIN SECTION end -------------------------------->
+
+
+      <!---------------------------------- PRESENTATION BAR -------------------------------------->
+
+      <div class="infoSection ">
+        <div class="infoSection__item">
+          <i class="ri-money-dollar-circle-fill"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">Save on Groceries</p>
+            <p class="small-text">Check the app before going to the grocery stores near you and make the best choices</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-team-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">Community Driven</p>
+            <p class="small-text">You can also contribute by posting prices of grocery items in stores in your area</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-user-star-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">Memebership Levels</p>
+            <p class="small-text">There are different membership levels which come with additional features</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-openai-fill"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">AI Data Collection</p>
+            <p class="small-text">The SkippySpy app uses AI technology to collect data from all over the world wide web</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-store-3-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">For Businesses</p>
+            <p class="small-text">We provide structured data acces via  our API endpoints for businesses who need it</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-earth-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">Global App</p>
+            <p class="small-text">SkippySpy is a global app - search for prices of food items all around the world</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-slideshow-3-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">New Features</p>
+            <p class="small-text">We are constantly updating and improving our app and add new faetures</p>
+          </div>
+        </div>
+        <div class="infoSection__item">
+          <i class="ri-line-chart-line"></i>
+          <div class="infoSection__item__text">
+            <p class="bold-text">Real Time Tracking</p>
+            <p class="small-text">Our automated tools provide the most recent data available. Get real time notifications</p>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------- PRESENTATION BAR end -------------------------------------->
+       
+      <!---------------------------------- POPULAR PRODUCTS start -------------------------------------->
+
+      <div class="popularProducts">
+        <div class="titleBar">
+          <div class="titleBar__left">
+            <p>Popular Products</p>
+            <p>Most popular products in your search area</p>
+          </div>
+          <div class="titleBar__right">
+            <button class="smallCta">View All&nbsp;<i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+        <div class="productCards">
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/maxi_v2.svg" alt="" srcset="">
+            </div>
+            <img src="assets/20047091_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/iga_logo.jpg" alt="" srcset="">
+            </div>
+            <img src="assets/21283752_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">Twinkies Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$5.99</span>
+                <span class="regular_price">$7.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/SuperC_logo.png" alt="" srcset="">
+            </div>
+            <img src="assets/21531649_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">PC Orange Juice - No Pulp - 2.78L format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$8.99</span>
+                <span class="regular_price">$10.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical"><div class="storeLogo">
+            <img src="assets/Metro-Logo-714868751.jpeg" alt="" srcset="">
+          </div>
+            <img src="assets/20151025001_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">Simply Orange Orange Juice - With Pulp - 2.78L format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$9.99</span>
+                <span class="regular_price">$12.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/maxi_v2.svg" alt="" srcset="">
+            </div>
+            <img src="assets/20165226001_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/Costco-Wholesale-Logo-700x394-3169395033.png" alt="" srcset="">
+            </div>
+            <img src="assets/20609687001_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/Provigomarche-2544560799.jpg" alt="" srcset="">
+            </div>
+            <img src="assets/20608416002_angle_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/Metro-Logo-714868751.jpeg" alt="" srcset="">
+            </div>
+            <img src="assets/20011517_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/Costco-Wholesale-Logo-700x394-3169395033.png" alt="" srcset="">
+            </div>
+            <img src="assets/20138827_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/iga_logo.jpg" alt="" srcset="">
+            </div>
+            <img src="assets/21178642_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/Provigomarche-2544560799.jpg" alt="" srcset="">
+            </div>
+            <img src="assets/20323429_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+          <div class="productCard__vertical">
+            <div class="storeLogo">
+              <img src="assets/SuperC_logo.png" alt="" srcset="">
+            </div>
+            <img src="assets/20139509001_front_a06_@2.png" alt="">
+            <div class="productCard__vertical__textbox">
+              <p class="product-title">May West Dry Pastry - 6pcs format</p>
+              <p class="product-title">
+                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i>
+                <span>&nbsp;4 reviews</span>
+              </p>
+              <p class="product-price">
+                <span class="reduced_price">$6.99</span>
+                <span class="regular_price">$8.99</span>
+              </p>
+            </div>
+            <button>Add to cart&nbsp;<i class="ri-add-line"></i>
+            </button>
+          </div>
+        </div>  
+      </div>
+      <!---------------------------------- POPULAR PRODUCTS end -------------------------------------->
+
+      <!---------------------------------- POPULAR CATEGORIES start ---------------------------------->
+      
+      <div class="popular-categories">
+        <div class="titleBar">
+          <div class="titleBar__left">
+            <p>Popular Categories</p>
+            <p>Most popular categories in your search area</p>
+          </div>
+          <div class="titleBar__right">
+            <button class="smallCta">View All&nbsp;<i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+        <div class="category-cards " >
+          <div class="category-card">
+            <i class="ri-restaurant-line"></i>
+            <p>Breakfst & Dairy</p>
+          </div>
+          <div class="category-card">
+            <i class="bi bi-egg"></i>
+            <p>Fruits & Vegetables</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-knife-line"></i>
+            <p>Meats & Seafood</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-bread-line"></i>
+            <p>Breads & Bakery</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-drinks-2-line"></i>
+            <p>Beverages</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-cake-3-line"></i>
+            <p>Biscuits & Snacks</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-home-2-line"></i>
+            <p>Houshold Needs</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-heart-pulse-line"></i>
+            <p>Healthcare</p>
+          </div>
+        </div>
+        <div class="category-cards row_2">
+          <div class="category-card">
+            <i class="ri-restaurant-line"></i>
+            <p>Breakfst & Dairy</p>
+          </div>
+          <div class="category-card">
+            <i class="bi bi-egg"></i>
+            <p>Fruits & Vegetables</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-knife-line"></i>
+            <p>Meats & Seafood</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-bread-line"></i>
+            <p>Breads & Bakery</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-drinks-2-line"></i>
+            <p>Beverages</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-cake-3-line"></i>
+            <p>Biscuits & Snacks</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-home-2-line"></i>
+            <p>Houshold Needs</p>
+          </div>
+          <div class="category-card">
+            <i class="ri-heart-pulse-line"></i>
+            <p>Healthcare</p>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------  POPULAR CATEGORIES end -------------------------------------->
+
+      <!----------------------------------  POPULAR STORES start -------------------------------------->
+      
+      <div class="popular-stores">
+        <div class="titleBar">
+          <div class="titleBar__left">
+            <p>Popular Stores</p>
+            <p>Most popular stores in your search area</p>
+          </div>
+          <div class="titleBar__right">
+            <button class="smallCta">View All&nbsp;<i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+        <div class="category-cards " >
+          <div class="category-card">
+            <img src="assets/maxi_v2.svg" alt="">
+            <p>Maxi</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/iga_logo.jpg" alt="">
+            <p>IGA</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/SuperC_logo.png" alt="">
+            <p>Super C</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/Metro-Logo-714868751.jpeg" alt="">
+            <p>Metro</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/Costco-Wholesale-Logo-700x394-3169395033.png" alt="">
+            <p>Costco</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/Provigomarche-2544560799.jpg" alt="">
+            <p>Provigo</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/adonis.png" alt="">
+            <p>Adonis Market</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/loblaws.png" alt="">
+            <p>Loblaws</p>
+          </div>
+        </div>
+        <div class="category-cards row_2">
+          <div class="category-card">
+            <img src="assets/aldi.png" alt="">
+            <p>Aldi</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/whole-foods.jpeg" alt="">
+            <p>Whole Foods</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/sprouts-logo.png" alt="">
+            <p>Sprouts</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/GiantEaglelogo.png" alt="">
+            <p>Giant Eagle</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/lidl-logo.png" alt="">
+            <p>Lidl</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/kaufland_logo.jpg" alt="">
+            <p>Kaufland</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/trader-joes-logo.png" alt="">
+            <p>Trader Joe's</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/publix-logo.png" alt="">
+            <p>Publix</p>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------- MEMBERSHIP LEVELS -------------------------------------->
+      
+      <div class="membership-levels">
+        <div class="titleBar">
+          <div class="titleBar__left">
+            <p>Membership Levels</p>
+            <p>We offer different levels of membership </p>
+          </div>
+          <div class="titleBar__right">
+            <button class="smallCta">View All&nbsp;<i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+        <div class="pricing-tables">
+          <section class="pricing-plan">
+            <div class="pricing-plan__header">
+              <h1 class="pricing-plan__title">Visitor</h1>
+              <h2 class="pricing-plan__summary">Minimal basic features</h2>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__feature">Browse local product listings</li>
+                <li class="pricing-plan__feature">Contains ads</li>
+                <li class="pricing-plan__feature">Limited requests per day</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__cost">$0</p>
+              <p class="pricing-plan__text">per month</p>
+              <!-- <a href="./" class="pricing-plan__button">Purchase</a> -->
+              <p class="pricing-plan__text">No credit card needed</p>
+            </div>
+          </section>
+          <section class="pricing-plan">
+            <div class="pricing-plan__header">
+              <h1 class="pricing-plan__title">Member</h1>
+              <h2 class="pricing-plan__summary">Minimal basic features</h2>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__feature">Browse local product listings</li>
+                <li class="pricing-plan__feature">Contains ads</li>
+                <li class="pricing-plan__feature">Limited requests per day</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__cost">$0</p>
+              <p class="pricing-plan__text">per month</p>
+              <a href="./" class="pricing-plan__button">Purchase</a>
+              <p class="pricing-plan__text">Minimum spent $816 over 12 months</p>
+            </div>
+          </section>
+          <section class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__special-text">Recommended</div>
+            <div class="pricing-plan__header">
+              <h1 class="pricing-plan__title">Member PRO</h1>
+              <h2 class="pricing-plan__summary">Minimal basic features</h2>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__feature">Browse local product listings</li>
+                <li class="pricing-plan__feature">Contains ads</li>
+                <li class="pricing-plan__feature">Limited requests per day</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__cost">$10</p>
+              <p class="pricing-plan__text">per month</p>
+              <a href="./" class="pricing-plan__button">Purchase</a>
+              <p class="pricing-plan__text">Minimum spent $816 over 12 months</p>
+            </div>
+          </section>
+        </div>
+        
+      </div>
+
+      <!---------------------------------- BEST SELLERS -------------------------------------->
+      
+      <!-- <div class="best-sellers">
+        <h1 class="temporary">Best Sellers</h1>
+      </div> -->
+
+      <!---------------------------------- PROMO BAR -------------------------------------->
+      
+      <!-- <div class="promo-bar">
+        <h1 class="temporary">Promo Bar</h1>
+      </div> -->
+
+    </div> <!--container -->
+
+    <!---------------------------------- FOOTER -------------------------------------->
+
+    <footer class="footer">
+    <div class="footer-upper">
+      <div class="footer-upper__box">
+        <img src="assets/Whole_Foods.png" alt="">
+        <ul>
+          <li>Track Order</li>
+          <li>Delivery& Returns</li>
+          <li>Warranty</li>
+        </ul>
+      </div>
+      <div class="footer-upper__box">
+        <ul>
+          <li><h2>About Us</h2></li>
+          <li>SkippySpy's Story</li>
+          <li>Work With Us</li>
+          <li>Corporate News</li>
+          <li>Investors</li>
+        </ul>
+      </div>
+      <div class="footer-upper__box">
+        <ul>
+          <li><h2>Useful Links</h2></li>
+          <li>Secure Payments</li>
+          <li>Privacy Policy</li>
+          <li>Terms Of Use</li>
+          <li>Archived Products</li>
+        </ul>
+      </div>
+      <div class="footer-upper__box">
+        <ul>
+          <li><h2>Contact Info</h2></li>
+          <li>
+            <div class="sub-box">
+              <div class="sub-box__left">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="sub-box__right">
+                <h3>Address</h3>
+                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="sub-box">
+              <div class="sub-box__left">
+                <i class="ri-phone-line"></i>
+              </div>
+              <div class="sub-box__right">
+                <h3>Phone</h3>
+                <p>1-800-123-4567</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="sub-box">
+              <div class="sub-box__left">
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="sub-box__right">
+                <h3>Email</h3>
+                <p>skippyspy@info.gmail.com</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-lower">
+      <div class="footer-lower__left">
+        <i class="ri-instagram-fill"></i><i class="ri-facebook-fill"></i><i class="ri-youtube-fill"></i>
+        &copy;2024 <span>SkippySpy</span> - All Rights reserved
+      </div>
+      <div class="footer-lower__right">
+        <i class="ri-visa-fill"></i><i class="ri-mastercard-fill"></i><i class="ri-paypal-fill"></i>
+      </div>
+    </div>
+    </footer>
+       
+  </body>
+   
+</html>
