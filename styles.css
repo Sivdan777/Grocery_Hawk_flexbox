@@ -312,7 +312,7 @@ body {
 
 .mainSection__left {
   /* width: 300px; */
-  border: 1px solid red;
+/*   border: 1px solid red; */
   font-size: 0.8rem;
   width: 100%;
 }
