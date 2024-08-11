@@ -115,7 +115,7 @@ body {
   color: var(--text-light);
   background-color: coral;
   /* padding: 0.5rem; */
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 
 }
 
@@ -226,7 +226,7 @@ body {
 .mainBar {
   width: 100%;
   margin-bottom: 1rem;
-  padding: 0.5rem 0 1rem 0;
+  padding: 1rem 0;
   display: grid;
   /* grid-template-columns: minmax(260px, 1fr) auto minmax(260px, 1fr); */
   grid-template-columns: 1fr minmax(520px, auto) 1fr;
@@ -272,7 +272,7 @@ body {
 
 .location__text p, .sign__in p {
   /* background-color: chocolate; */
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .search-bar input {
@@ -1001,7 +1001,7 @@ span.regular_price {
   border-bottom: 1px solid var(--border-color);
   margin: 0 auto 1rem auto;
   padding: 1rem;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
 }
 
 /* .footer > .footer-upper .footer-upper__box {

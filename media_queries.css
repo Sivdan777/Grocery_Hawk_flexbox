@@ -3,8 +3,33 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  .mainBar {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    /* border: 1px solid cyan; */
+  }
+
+  .mainBar__left {
+    display: inline-block;
+    /* width: 50%; */
+    /* margin: 0 auto 1rem auto; */
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+  }
+
+  .mainBar__left__items {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  /******************************* MAIN SECTION **********************/
   .mainSection__left {
     font-size: 1.2rem;
+  }
+  
+  .mainSection__left .categories {
+    padding: 0 1rem;
   }
 
   .mainSection__left .categories ul{
@@ -13,14 +38,11 @@
 
   .mainSection__left .categories ul li{
     padding: 1.2rem;
-  }
-
-  .categories {
-    padding: 0 1rem;
+    padding-left: 2.4rem;
   }
 
   .categories ul li a {
-    justify-content: center;
+    justify-content: start;
   }
 
   .infoSection {
@@ -80,6 +102,7 @@
   /************************************** FOOTER *********************************/
   .footer > .footer-upper {
     display: block;
+    margin-bottom: 2rem;
   }
 
   .footer-upper__box {
@@ -161,7 +184,55 @@
     padding: 0 0.5rem;
   }
 
+  /*********************** MOBILE MENU ******************/
+
+  .topMenu {
+    display: none;
+  }
+  
+  .mainMenu {
+    display: none;
+  }
+
+  .mainBar__right {
+    display: none;
+  }
+
+  .mainBar {
+    position: relative;
+    /* border: 1px solid green; */
+  }
+
+  .mobile-open-btn {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    /* border: 1px solid red; */
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************************************************************  */
 @media only screen and (max-width: 860px) {
 
