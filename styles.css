@@ -853,7 +853,7 @@ span.regular_price {
   font-size: 16px;
   line-height: 1.5;
   color: #555555;
-  margin: 2rem auto;
+  margin: 0 auto 4rem auto;
 }
 
 .pricing-plan--highlighted {
@@ -994,11 +994,24 @@ span.regular_price {
 
 .footer > .footer-upper {
   display: flex;
-  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 80%;
   border-bottom: 1px solid var(--border-color);
   margin: 0 auto 1rem auto;
-  padding-bottom: 1rem;
+  padding: 1rem;
   font-size: 0.8rem;
+}
+
+/* .footer > .footer-upper .footer-upper__box {
+  border: 1px solid yellow;
+  width: calc(100% / 4);
+  min-height: 300px;
+} */
+
+.footer-upper__box {
+  flex: 0 1 auto;
 }
 
 .footer-upper__box img {
@@ -1041,12 +1054,7 @@ span.regular_price {
   font-size: 1.4rem;
 }
 
-.footer > .footer-upper .footer-upper__box {
-  /* border: 1px solid yellow; */
-  width: calc(100% / 4);
-  min-height: 300px;
-}
-
+/********** footer lower ***********/
 .footer > .footer-lower {
   width: 70%;
   display: flex;
@@ -1056,8 +1064,9 @@ span.regular_price {
   font-size: 16px;
 }
 
-.footer > .footer-lower .footer-lower__right {
-  font-size: 1.4rem;
+
+.footer-lower__left > span {
+  color: #009578;
 }
 
 .footer-lower__left > i:not(:last-child) {
@@ -1068,8 +1077,9 @@ span.regular_price {
   margin-right: 0.5rem;
 }
 
-.footer-lower__left > span {
-  color: #009578;
+
+.footer > .footer-lower .footer-lower__right {
+  font-size: 1.4rem;
 }
 
 /**************************************** TESTING STYLES *****************************************/
