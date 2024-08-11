@@ -77,12 +77,28 @@
     display: block;
   }
 
+  /************************************** FOOTER *********************************/
   .footer > .footer-upper {
     display: block;
   }
 
   .footer-upper__box {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1rem auto;
+    /* border: 1px solid pink; */
+    text-align: center;
+  }
+
+  .footer-upper__box ul {
+    display: inline-block;
+    list-style: none;
+    line-height: 2;
+    color: var(--border-color);
+    /* border: 1px solid yellow; */
+    text-align: left;
+  }
+  
+  .footer-upper__box ul li h2 {
+    /* margin: 0 auto 2rem auto; */
     /* border: 1px solid pink; */
     text-align: center;
   }
@@ -93,10 +109,15 @@
   }
 
   .footer-upper__box .sub-box {
-    margin: 0 auto 1rem auto;
-    width: 60%;
+    margin: 0 auto 2rem auto;
+    /* width: 60%; */
     justify-content: start;
     text-align: left;
+    /* border: 1px solid aqua; */
+  }
+
+  .footer-upper__box .sub-box:last-child {
+    margin-bottom: 0;
   }
 
   .footer > .footer-lower {
@@ -124,13 +145,20 @@
     padding: 0 0.5rem;
   }
 
-  .copyright {
+  .footer-lower__middle .copyright {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-lower__right .payment-methods {
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  .payment-methods {
-    text-align: center;
+  .footer-lower__right .payment-methods i {
+    /* font-size: 2rem; */
+    display: inline-block;
+    padding: 0 0.5rem;
   }
 
 }
