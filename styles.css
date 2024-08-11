@@ -787,18 +787,25 @@ span.regular_price {
 }
 
 .category-cards {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;*/
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 
 .category-card {
   min-height: 90px;
-  width: calc(100% / 8);
-  /* border: 1px solid var(--border-color); */
-  /* border-bottom: none; */
-  padding-top: 0.5rem;
+  /* width: calc(100% / 8); */
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0.5rem;
   text-align: center;
   /* color: var(--border-color); */
+  background-color: #FBF9F1;
 }
 
 .category-card i {
@@ -829,25 +836,16 @@ span.regular_price {
   justify-content: center;
   gap: 1rem;
   align-items: center; */
-  /* padding: 2rem 0; */
+  padding: 0 1rem;
   /* display: none; */
 }
 
-.membership-levels .pricing-tables{
+.pricing-tables {
   width: 100%;
-
-  /* background-color: blanchedalmond;
-  margin-bottom: 2rem; */
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  /* padding: 2rem 0;
-  display: none;*/
 }
 
 .pricing-plan {
-  width: 300px;
+  width: 80%;
   border-radius: 16px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -855,12 +853,12 @@ span.regular_price {
   font-size: 16px;
   line-height: 1.5;
   color: #555555;
-  margin: 15px;
+  margin: 2rem auto;
 }
 
 .pricing-plan--highlighted {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .pricing-plan__special-text {
