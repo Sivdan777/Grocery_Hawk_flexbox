@@ -259,7 +259,7 @@
 
   .mobile-open-btn {
     position: absolute;
-    top: 1.4rem;
+    top: 2rem;
     left: 0.5rem;
     font-size: 1.8rem;
     padding: 0.15rem;
@@ -274,7 +274,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.85);
+    /* background-color: red; */
     z-index: 100;
   }
 
