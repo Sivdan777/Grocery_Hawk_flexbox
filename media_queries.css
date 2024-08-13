@@ -212,7 +212,7 @@
 
   .footer-lower__left{
     /* margin-bottom: 1rem; */
-    border: 1px solid red;
+/*     border: 1px solid red; */
   }
 
   .footer-lower__left .social-media {
@@ -227,7 +227,7 @@
   }
 
   .footer-lower__right {
-    border: 1px solid yellow;
+/*     border: 1px solid yellow; */
   }
 
   .footer-lower__right .payment-methods {
