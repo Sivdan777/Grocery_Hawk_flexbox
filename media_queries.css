@@ -150,16 +150,42 @@
 
   /************************************** FOOTER *********************************/
 
+  .footer { 
+    background-color: black;
+    color: whitesmoke;
+    font-size: 0.8rem;
+  }
+
   /***************************** footer upper ******************************/
   .footer > .footer-upper {
     display: block;
+    padding: 0 2rem 2rem;
+    margin-bottom: 2rem;
+    /* border: 1px solid yellow; */
+  }
+
+  .footer-upper__row-1 {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+  }
+
+  .footer-upper__row-2 {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+  }
+
+  .footer-upper__row-1 {
     margin-bottom: 2rem;
   }
 
   .footer-upper__box {
-    margin: 0 auto 1rem auto;
+    /* margin: 0 auto 1rem auto; */
     /* border: 1px solid pink; */
-    text-align: center;
+    text-align: left;
+    /* flex-grow: 1; */
   }
 
   .footer-upper__box ul {
@@ -174,24 +200,34 @@
   .footer-upper__box ul li h2 {
     /* margin: 0 auto 2rem auto; */
     /* border: 1px solid pink; */
-    text-align: center;
+    text-align: left;
   }
 
-  .footer-upper__box img {
-    width: 120px;
+  .footer-upper__logo {
+    text-align: center;
+    padding-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .footer-upper__logo img {
+    width: 120px;
   }
 
   .footer-upper__box .sub-box {
     margin: 0 auto 2rem auto;
-    /* width: 60%; */
+    /* display: flex; */
     justify-content: start;
     text-align: left;
+    gap: 1rem;
     /* border: 1px solid aqua; */
   }
 
   .footer-upper__box .sub-box:last-child {
     margin-bottom: 0;
+  }
+
+  .footer-upper__box .sub-box i {
+    margin-right: 0.5rem;
   }
 
   /**************************** footer lower *************************/
@@ -226,7 +262,7 @@
   .footer-lower__left .social-media i{
     font-size: 2rem;
     display: inline-block;
-    padding: 0 0.0rem;
+    padding: 0 0.25rem;
   }
 
   .footer-lower__right {
@@ -239,7 +275,7 @@
   }
 
   .footer-lower__right .payment-methods i {
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: inline-block;
     padding: 0 0.25rem;
   }
