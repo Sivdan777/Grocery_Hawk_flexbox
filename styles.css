@@ -990,7 +990,7 @@ span.regular_price {
 
 /**************************************** FOOTER *****************************************/
 
-.footer {
+/* .footer {
   width: 100%;
   min-height: 400px;
   background-color: black;
@@ -1007,8 +1007,8 @@ span.regular_price {
   border-bottom: 1px solid var(--border-color);
   margin: 0 auto 1rem auto;
   padding: 1rem;
-  /* font-size: 0.8rem; */
-}
+  font-size: 0.8rem;
+} */
 
 /* .footer > .footer-upper .footer-upper__box {
   border: 1px solid yellow;
@@ -1016,7 +1016,7 @@ span.regular_price {
   min-height: 300px;
 } */
 
-.footer-upper__box {
+/* .footer-upper__box {
   flex: 0 1 auto;
 }
 
@@ -1041,14 +1041,14 @@ span.regular_price {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0.5rem;
-}
+} */
 
 /* .footer-upper__box .sub-box .sub-box__left {
   border: 1px solid yellow;
 } */
 
-.footer-upper__box .sub-box .sub-box__right {
-  /* border: 1px solid red; */
+/* .footer-upper__box .sub-box .sub-box__right {
+  border: 1px solid red;
   padding-left: 1rem;
 }
 
@@ -1058,10 +1058,10 @@ span.regular_price {
 
 .footer-upper__box .sub-box .sub-box__left i {
   font-size: 1.4rem;
-}
+} */
 
 /********** footer lower ***********/
-.footer > .footer-lower {
+/* .footer > .footer-lower {
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -1086,7 +1086,7 @@ span.regular_price {
 
 .footer > .footer-lower .footer-lower__right {
   font-size: 1.4rem;
-}
+} */
 
 /**************************************** TESTING STYLES *****************************************/
 
