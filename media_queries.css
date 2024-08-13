@@ -192,45 +192,58 @@
     margin-bottom: 0;
   }
 
+  /**************************** footer lower *************************/
   .footer > .footer-lower {
-    width: 70%;
-    /* display: flex;
-    justify-content: space-between;*/
-    /* margin: 0 auto; */
-    /*padding-bottom: 1rem;
-    font-size: 16px; */
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
     display: block;
+    /* margin: 0 auto; */
+    padding: 0 2rem 1rem 2rem;
+    font-size: 16px;
+  }
+
+  .footer-lower__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .footer-lower__left{
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    border: 1px solid red;
   }
 
   .footer-lower__left .social-media {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     text-align: center;
   }
 
   .footer-lower__left .social-media i{
     font-size: 2rem;
     display: inline-block;
-    padding: 0 0.5rem;
+    padding: 0 0.0rem;
+  }
+
+  .footer-lower__right {
+    border: 1px solid yellow;
+  }
+
+  .footer-lower__right .payment-methods {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+  }
+
+  .footer-lower__right .payment-methods i {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0 0.25rem;
   }
 
   .footer-lower__middle .copyright {
     text-align: center;
     margin-bottom: 1rem;
-  }
-
-  .footer-lower__right .payment-methods {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .footer-lower__right .payment-methods i {
-    /* font-size: 2rem; */
-    display: inline-block;
-    padding: 0 0.5rem;
   }
 
   /*********************** MOBILE MENU ******************/
