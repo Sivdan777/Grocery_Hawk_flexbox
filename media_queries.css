@@ -166,14 +166,15 @@
 
   .footer-upper__row-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     /* border: 1px solid red; */
   }
 
   .footer-upper__row-2 {
     display: flex;
-    justify-content: start;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 2rem;
     /* border: 1px solid red; */
   }
 
