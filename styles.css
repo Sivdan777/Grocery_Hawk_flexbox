@@ -94,6 +94,13 @@ body {
   margin: 0;
 }
 
+
+
+
+.mobile-menu,  .mobile-open-btn {
+  display: none;
+}
+
 /*****************************************************************************************
                                          06 - CONTAINERS
 ******************************************************************************************/
@@ -112,11 +119,48 @@ body {
   width: 100%;
   /* min-height: 30px; */
   font-size: 14px;
-  color: var(--text-light);
-  background-color: coral;
+  /* color: var(--text-light); */
+  color: white;
+  /* background-color: coral; */
+  /* background-color: #0F67B1; */
+  /* background-color: #007FFF; */
+  background-color: #FF4F00;
   /* padding: 0.5rem; */
-  margin-bottom: 0rem;
+  margin-bottom: 0.6rem;
+  /* transition: all 3.5s ease; */
+}
 
+/* .topBar::after {
+  content: 'x';
+  display: block;
+  position: absolute;
+  right: 32px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  padding: 8px;
+  margin-left: 12px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #007c64;
+} */
+
+.topBar__close-btn {
+  /* background-color: rgb(235, 91, 39); */
+  /* background-color: #1F316F; */
+  background-color: #FF7F50;
+  /* color: #83B4FF; */
+  color: #BA160C;
+  padding: 5px 10px 6px 10px;
+  border-radius: 4px;
+  margin: 0;
+  margin-left: 24px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  cursor: pointer;
 }
 
 .topBar__container {
@@ -226,7 +270,7 @@ body {
 .mainBar {
   width: 100%;
   margin-bottom: 1rem;
-  padding: 1rem 0;
+  padding: 1rem;
   display: grid;
   /* grid-template-columns: minmax(260px, 1fr) auto minmax(260px, 1fr); */
   grid-template-columns: 1fr minmax(520px, auto) 1fr;
@@ -235,6 +279,10 @@ body {
   align-items: center;
   font-size: 0.8rem;
   /* border-bottom: 1px solid var(--border-color); */
+  /* background-color: #3FA2F6; */
+  /* background-color: #DEDEED; */
+  background-color: hsl(216, 37%, 92%);
+  border-radius: 8px;
 }
 
 .mainBar__left {
@@ -245,6 +293,10 @@ body {
   flex-grow: 1; */
   justify-content: start;
   /* align-items: center; */
+}
+
+.mainBar__left__items {
+  display: flex;
 }
 
 .mainBar__left img.logo {
@@ -275,19 +327,53 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.search-bar {
+  position: relative;
+}
+
+.search-bar{
+  /* border: 1px solid #E86100; */
+}
+
 .search-bar input {
   /* -webkit-appearance: none; */
   -moz-appearence: none;
   min-width: 100%; 
   max-width: 800px;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #e8eaf0;
+  height: 50px;
+  border-radius: 4px;
+  /* background-color: #e8eaf0; */
+  background-color: white;
   outline: none;
   box-shadow: none !important;
   font-size: 0.8rem;
   border: none;
   padding: 0 1rem;
+  text-align: center;
+}
+
+.search-bar input:focus {
+  border: 2px solid #E86100;
+}
+
+.search-bar div.search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 13px 16px;
+  background-color: #E86100;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.search-bar div.search-icon:hover {
+  background-color: #BF5700;
+}
+
+.search-bar div.search-icon i {
+  font-size: 24px;
+  color: white;
 }
 
 .mainBar__right {
@@ -351,6 +437,7 @@ body {
 
 .mainSection__right {
   width: 100%;
+  position: relative;
   /* height: 460px; */
   /* background-color: blueviolet; */
 }
@@ -445,6 +532,10 @@ body {
 .main-image__text {
   /* background-color: #e8eaf0; */
   width: 40%;
+  position: absolute;
+  top: 50%;
+  left:2rem;
+  transform: translate(0, -40%);
   /* color: var(--text-light); */
 }
 
@@ -484,8 +575,10 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 6px;
   border: none;
-  /* background-color: var(--fourth-color); */
-  background-color: darkcyan;
+  /* background-color: #FF4F00; */
+  /* background-color: darkcyan; */
+  /* background-color: #3FA2F6; */
+  background-color: #E86100;
   color: var(--text-light);
 }
 
@@ -990,17 +1083,17 @@ span.regular_price {
 
 /**************************************** FOOTER *****************************************/
 
-/* .footer {
+.footer {
   width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   background-color: black;
   color: whitesmoke;
   padding-top: 2rem;
 }
 
 .footer > .footer-upper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
   gap: 2rem;
   width: 80%;
@@ -1008,21 +1101,43 @@ span.regular_price {
   margin: 0 auto 1rem auto;
   padding: 1rem;
   font-size: 0.8rem;
-} */
+}
 
-/* .footer > .footer-upper .footer-upper__box {
-  border: 1px solid yellow;
-  width: calc(100% / 4);
-  min-height: 300px;
-} */
+.footer-upper__row-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  /* gap: 6rem; */
+  /* border: 1px solid red; */
+}
 
-/* .footer-upper__box {
+.footer-upper__row-2 {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 2rem; */
+  /* border: 1px solid red; */
+}
+
+.footer > .footer-upper .footer-upper__box {
+  /* border: 1px solid yellow; */
+  /* width: calc(100% / 4);
+  min-height: 300px; */
+}
+
+.footer-upper__box {
   flex: 0 1 auto;
 }
 
-.footer-upper__box img {
-  width: 80px;
-  margin-bottom: 2rem;
+.footer-upper__logo {
+  /* display: flex;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem; */
+  /* border: 1px solid #9ADE7B; */
+}
+
+.footer-upper__logo img {
+  width: 120px;
 }
 
 .footer-upper__box ul {
@@ -1040,14 +1155,15 @@ span.regular_price {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  display: block;
   margin-bottom: 0.5rem;
-} */
+}
 
-/* .footer-upper__box .sub-box .sub-box__left {
+.footer-upper__box .sub-box .sub-box__left {
   border: 1px solid yellow;
-} */
+}
 
-/* .footer-upper__box .sub-box .sub-box__right {
+.footer-upper__box .sub-box .sub-box__right {
   border: 1px solid red;
   padding-left: 1rem;
 }
@@ -1058,10 +1174,10 @@ span.regular_price {
 
 .footer-upper__box .sub-box .sub-box__left i {
   font-size: 1.4rem;
-} */
+}
 
 /********** footer lower ***********/
-/* .footer > .footer-lower {
+.footer > .footer-lower {
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -1086,7 +1202,7 @@ span.regular_price {
 
 .footer > .footer-lower .footer-lower__right {
   font-size: 1.4rem;
-} */
+}
 
 /**************************************** TESTING STYLES *****************************************/
 
