@@ -42,7 +42,7 @@
         <!-- <h1 class="temporary">Top Menu</h1> -->
         <div class="topMenu__left">
           <ul>
-            <li>About Us</li>
+            <!-- <li>About Us</li> -->
             <li>EN&nbsp;<i class="ri-arrow-down-s-line"></i></li>
             <li>CAD&nbsp;<i class="ri-arrow-down-s-line"></i></li>
           </ul>
@@ -62,41 +62,44 @@
 
       <!---------------------------------- MAIN BAR start -------------------------------------->
 
+      <!-- mobile menu -->
+      <nav class="mobile-open-btn">
+        <i class="ri-menu-line"></i>
+      </nav>
+      <nav class="mobile-menu hide">
+        <div class="mobile-menu__left">
+          <div class="branding">
+            <img src="assets/logo/GroceryHawk_logo_11-modified.png" alt="" class="logo">
+          </div>
+          <div class="nav-items top_section">
+            <ul>
+              <li><i class="ri-menu-search-line"></i>All Categories</li>
+              <li><i class="ri-cake-3-line"></i>Popular Categories</li>
+              <li><i class="ri-star-smile-line"></i>Popular Products</li>
+              <li><i class="ri-store-2-line"></i>Popular Stores</li>
+              <li><i class="ri-heart-3-line"></i>Whishlist</li>
+              <li><i class="ri-history-line"></i>History</li>
+            </ul>
+          </div>
+          <div class="nav-items bottom_section">
+            <ul>
+              <li><i class="ri-account-circle-line"></i>My Account</li>
+              <li><i class="ri-settings-3-line"></i>Settings</li>
+              <li><i class="ri-chat-3-line"></i>Language</li>
+              <li><i class="ri-palette-line"></i>Theme</li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- mobile menu end -->
+
       <div class="mainBar">
 
-        <!-- mobile menu -->
-        <nav class="mobile-open-btn">
-          <i class="ri-menu-line"></i>
-        </nav>
-        <nav class="mobile-menu hide">
-          <div class="mobile-menu__left">
-            <div class="branding">
-              <img src="assets/logo/GroceryHawk_logo_11-modified.png" alt="" class="logo">
-            </div>
-            <div class="nav-items top_section">
-              <ul>
-                <li><i class="ri-menu-search-line"></i>All Categories</li>
-                <li><i class="ri-cake-3-line"></i>Popular Categories</li>
-                <li><i class="ri-star-smile-line"></i>Popular Products</li>
-                <li><i class="ri-store-2-line"></i>Popular Stores</li>
-                <li><i class="ri-heart-3-line"></i>Whishlist</li>
-                <li><i class="ri-history-line"></i>History</li>
-              </ul>
-            </div>
-            <div class="nav-items bottom_section">
-              <ul>
-                <li><i class="ri-account-circle-line"></i>My Account</li>
-                <li><i class="ri-settings-3-line"></i>Settings</li>
-                <li><i class="ri-chat-3-line"></i>Language</li>
-                <li><i class="ri-palette-line"></i>Theme</li>
-              </ul>
-            </div>
-          </div>
-        </nav><!-- mobile menu end -->
+        <div class="mainBar__logo">
+          <img src="assets/logo/GroceryHawk_logo_11-modified.png" alt="" class="logo">
+        </div>
 
-        <div class="mainBar__left">
-          <!-- <div class="mainBar__left__items"> -->
-            <img src="assets/logo/GroceryHawk_logo_11-modified.png" alt="" class="logo">
+        <div class="mainBar__search">
+          <div class="mainBar__left">
             <div class="location">
               <div class="location__icon">
                 <i class="ri-map-pin-line" style="font-size: 28px;"></i>
@@ -107,15 +110,14 @@
               </div>
               <i class="ri-arrow-down-s-line" style="font-size: 28px;"></i>
             </div>
-          <!-- </div> -->
-        </div>
-        <div class="search-bar">
+          </div>
+          <div class="search-bar">
           <input type="search" placeholder="Search for products, categories or brands...">
           <div class="search-icon">
             <i class="ri-search-line"></i>
           </div>
-        </div>
-        <div class="mainBar__right">
+          </div>
+          <div class="mainBar__right">
           <!-- <div class="user__icon">
             <i class="ri-user-line" style="font-size: 28px;"></i>
           </div> -->
@@ -129,6 +131,7 @@
           <!-- <div class="location__icon">
             <i class="ri-shopping-cart-line" style="font-size: 28px;"></i>
           </div> -->
+        </div>
         </div>
       </div>
       <!---------------------------------- MAIN BAR end -------------------------------------->
@@ -231,14 +234,35 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
+          </div><!-- categories end -->
 
+          <div class="promo-image">
+            <img src="assets/promo-image-1.png" alt="">
+          </div>
+          
+          <div class="promo-image">
+            <img src="assets/promo-image-2.png" alt="">
+          </div>
+          
+          <div class="promo-image">
+            <img src="assets/promo-image-3.png" alt="">
+          </div>
+          
+          <div class="promo-image">
+            <img src="assets/promo-image-4.png" alt="">
+          </div>
+          
+          <div class="promo-image">
+            <img src="assets/promo-image-5.png" alt="">
+          </div>
+
+        </div><!-- mainSection__left end -->
+        
         <div class="mainSection__right">
           <div class="mainMenu">
             <div class="mainMenu__left">
               <ul>
-                <li><a href="#">Home <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Shop <i class="ri-arrow-down-s-line"></i></a></li>
                 <li><a href="#">Fruits & Vegetables</a></li>
                 <li><a href="#">Beverages</a></li>
@@ -254,20 +278,28 @@
             </div>
           </div>
           <div class="main-image">
-            
-          </div>
-          <div class="main-image__text">
-            <h1>Compare prices of grocery items in stores near you</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa velit unde, repellat tempore ratione numquam?</p>
-            <div class="cta-box">
-              <div class="cta-btn__box">
-                <button href="#">Join&nbsp;Now</button>
+            <div class="main-image__text">
+              <h1>Compare prices of grocery items in stores near you</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsa velit unde, repellat tempore ratione numquam?</p>
+              <div class="cta-box">
+                <div class="cta-btn__box">
+                  <button href="#">Join&nbsp;Now</button>
+                </div>
+                <div class="cta-text">
+                  <p>Enjoy additional advantages when you become a member. Start for free now...</p>
+                </div>
               </div>
-              <div class="cta-text">
-                <p>Enjoy additional advantages when you become a member. Start for free now...</p>
-              </div>
-            </div>
+            </div>            
           </div>
+
+          <div class="promo-image">
+            <img src="assets/promo-image-6.png" alt="">
+          </div>
+          
+          <div class="promo-image">
+            <img src="assets/promo-image-7.png" alt="">
+          </div>
+
         </div>
 
       </div>
