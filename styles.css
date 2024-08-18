@@ -980,28 +980,30 @@ span.regular_price {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;*/
-  padding: 0 1rem;
+  padding: 0 0rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   gap: 0.5rem;
 }
 
 .category-card {
-  min-height: 90px;
+  min-height: 110px;
   /* width: calc(100% / 8); */
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   border-radius: 4px;
   padding: 0.5rem;
   text-align: center;
   /* color: var(--border-color); */
-  background-color: #FBF9F1;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .category-card i {
   font-size: 36px;
   display: block;
   margin-bottom: 0.5rem;
-  color: darkcyan;
+  /* color: darkcyan; */
+  /* color: var(--border-color); */
+  color: #696969;
 }
 
 .category-card p {
